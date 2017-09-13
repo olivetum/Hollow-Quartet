@@ -60,7 +60,8 @@ a {
 }
 
 .banner-title {
-  margin-top: 20vh;
+  position: relative;
+  top: 180px;
   font-family: 'Rajdhani', sans-serif;
   font-size: 100px !important;
   display: none;
