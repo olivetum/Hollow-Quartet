@@ -47,11 +47,12 @@ a {
   margin: 2px;
   font-weight: 600;
   opacity: 0.8;
-  color: white;
+  color: white !important;
 
 }
-
-
+.menu-item a {
+  color: white;
+}
 .banner {
   position: absolute;
   top: 0;
