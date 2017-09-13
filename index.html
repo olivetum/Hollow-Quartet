@@ -16,7 +16,6 @@
         <link rel="stylesheet" href="css/bulma.css">
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,62 +23,60 @@
         <![endif]-->
 
         <!-- Baner -->
-        <section class="banner notification is-primary is-large">
+        <div class="banner" style="width: 100vw; height: 80vh;" data-vide-bg="Turysta" >
+
+                    <!-- TITLE -->
+                    <div class="banner-title has-text-centered">
+                      <div class="hollow-title">
+                        HOLLOW QUARTET
+                      </div>
 
 
+                      <!-- Menu -->
+                      <div style="display: block; margin: 0 auto; width: 50vw;">
+                        <div class="columns menu-container">
+                          <div class="column  menu-item has-text-centered">
+                            <a href="#bio">Bio</a>
+                          </div>
+                          <div class="column  menu-item has-text-centered">
+                            <a href="#koncerty">Koncerty</a>
+                          </div>
+                          <div class="column  menu-item has-text-centered">
+                            <a href="#Album">Album</a>
+                          </div>
+                          <div class="column  menu-item has-text-centered">
+                            <a href="#Galeria">Galeria</a>
+                          </div>
+                          <div class="column  menu-item has-text-centered">
+                              <a href="#kontakt">Kontakt</a>
+                          </div>
+                        </div>
 
-          <!-- TITLE -->
-          <div class="banner-title has-text-centered">
-            <div class="hollow-title">
-              HOLLOW QUARTET
-            </div>
-
-
-            <!-- Menu -->
-            <div style="display: block; margin: 0 auto; width: 50vw;">
-              <div class="columns menu-container">
-                <div class="column  menu-item has-text-centered">
-                  <a href="#bio">Bio</a>
-                </div>
-                <div class="column  menu-item has-text-centered">
-                  <a href="#koncerty">Koncerty</a>
-                </div>
-                <div class="column  menu-item has-text-centered">
-                  <a href="#Album">Album</a>
-                </div>
-                <div class="column  menu-item has-text-centered">
-                  <a href="#Galeria">Galeria</a>
-                </div>
-                <div class="column  menu-item has-text-centered">
-                    <a href="#kontakt">Kontakt</a>
-                </div>
-              </div>
-
-              <div>
-                <svg id="menu_circle" class="menu-button" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><defs><style>.cls-1{fill:#ff3860;}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>Menu BUtton</title><circle class="cls-1" cx="40" cy="40" r="40"/><line class="cls-2" x1="12" y1="40" x2="68" y2="40"/><line class="cls-2" x1="40" y1="68" x2="40" y2="12"/></svg>
-              </div>
-            </div> <!-- MENU END -->
+                        <div>
+                          <svg id="menu_circle" class="menu-button" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><defs><style>.cls-1{fill:#ff3860;}.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>Menu BUtton</title><circle class="cls-1" cx="40" cy="40" r="40"/><line class="cls-2" x1="12" y1="40" x2="68" y2="40"/><line class="cls-2" x1="40" y1="68" x2="40" y2="12"/></svg>
+                        </div>
+                      </div> <!-- MENU END -->
 
 
-            <div id="myBtn"  class="banner-sub subtitle has-text-centered banner-button is-vcentered">
-                TURYSTA <i class="fa fa-play" style="margin-top: 2px; margin-left: 15px;" aria-hidden="true"></i>
-            </div>
+                      <div id="myBtn"  class="banner-sub subtitle has-text-centered banner-button is-vcentered">
+                          TURYSTA <i class="fa fa-play" style="margin-top: 2px; margin-left: 15px;" aria-hidden="true"></i>
+                      </div>
 
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
 
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <iframe class="youtube" width="700" height="394"  src="" frameborder="0" allowfullscreen></iframe>
-              </div>
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <iframe class="youtube" width="700" height="394"  src="" frameborder="0" allowfullscreen></iframe>
+                        </div>
 
-            </div>
-          </div>
-        </section>
+                      </div>
+                    </div>
+        </div>
 
         <!-- BIO -->
-        <section id="bio" style="width: 80vw; display: block; margin: 0 auto; margin-top: 80px;">
+        <section id="bio" style="width: 80vw; display: block; margin: 0 auto; margin-top: 90vh;">
           <div class="columns" style="">
             <div class="column notification bio">
 
@@ -212,5 +209,7 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script src="js/jquery.vide.js"></script>
+
     </body>
 </html>

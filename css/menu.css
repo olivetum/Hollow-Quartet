@@ -56,9 +56,6 @@ a {
   position: absolute;
   top: 0;
   height: 80vh;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-position: 0px;;
 }
 
 .banner-title {
@@ -66,6 +63,7 @@ a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 100px !important;
   display: none;
+  color: white;
 }
 @media only screen and (max-width: 768px) {
   .banner-title {
