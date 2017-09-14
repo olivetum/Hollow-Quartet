@@ -27,6 +27,11 @@ a {
 a:hover {
   color: white !important;
 }
+.bio > p {
+  pointer-events: none;
+}
+
+
 .menu-container {
   border-top: 3px solid white;
   margin: 0 auto;
@@ -56,6 +61,8 @@ a:hover {
 .menu-item a {
   color: white;
 }
+
+
 .banner {
   position: absolute;
   top: 0;
@@ -126,19 +133,19 @@ box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
   font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   color: white;
-  background-size: 111%;
+  background-size: cover;
   transition: all 0.2s;
   transition: box-shadow 0.3s ease-in-out;
 }
 .bio:hover {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
 }
 .bio>p {
   position: relative;
+  top: -60px;
   display: block;
-  bottom: -85%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -146,13 +153,43 @@ box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
       margin-left: 0px;
   }
 }
+
+.bio-content {
+  font-family: 'Roboto' sans-serif;
+  font-weight: 200 !important;
+  font-size: 1.2em;
+  width: calc(100% + 1.5rem);
+  height: calc(100% + 1.5rem);
+  position: relative;
+  top: -0.75rem;
+  left: -0.75rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  opacity: 0;
+}
+.bio-p {
+  pointer-events: none;
+  padding: 10px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  display: none;
+}
+
 .zespol {
   font-family: 'Roboto' sans-serif;
   font-weight: 400;
   font-size: 1.2em;
-  overflow: scroll;
+  overflow: hidden;
   color: rgb(46, 46, 46);
 }
+
+.zespol:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
 .zespol > p {
   margin: 5px;
   position: relative;
@@ -217,6 +254,9 @@ box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
 .kasia {
   background-image: url("../img/kasia.jpg");
 }
+.kasia::after {
+  opacity: 0.4;
+}
 
 .jacek {
   background-image: url("../img/jacek.jpg");
@@ -224,10 +264,12 @@ box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
 
 .daniel {
   background-image: url("../img/daniel.jpg");
+  background-position: right;
 }
 
 .antek {
   background-image: url("../img/antek.jpg");
+  background-position: right;
 }
 
 .maciek{
@@ -244,6 +286,12 @@ td > a {
   -webkit-mask-image: linear-gradient(-75deg, rgba(255,255,255,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 1.6s infinite;
+}
+
+.effect-shine2:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255,255,255,.6) 10%, #FFF 50%, rgba(255,255,255,.6) 70%);
+  -webkit-mask-size: 180%;
+  animation: shine 1.6s;
 }
 
 @-webkit-keyframes shine {

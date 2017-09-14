@@ -52,7 +52,7 @@ $('.banner-title').slideDown(1300);
   };
 
 
-
+// YOUTUBE ICON HOVER
 $('.banner-button').mouseenter(function () {
   $('.yt-ico').css('color', 'red');
 });
@@ -60,10 +60,30 @@ $('.banner-button').mouseout(function () {
   $('.yt-ico').css('color', 'white');
 });
 
+$( ".fadeOut" ).mouseenter(function() {
+  $(this).find('.name').slideUp();
+  $(this).find('.bio-content').animate({
+    opacity: 0.8,
+  }, 350, function() {
+    // Animation complete.
+  });
+  $(this).find('.bio-content').find('p').slideDown(800);
+});
+
+$( ".fadeOut" ).mouseout(function() {
+  $(this).find('.bio-content').find('p').slideUp(800);
+  $(this).find('.name').fadeIn();
+  $(this).find('.bio-content' ).animate({
+    opacity: 0,
+  }, 450, function() {
+    // Animation complete.
+  });
 
 });
 
+});
 
+/*
 $(document).ready(function() {
 var movementStrength = 55;
 var height = movementStrength / $(window).height();
@@ -76,3 +96,4 @@ $(".bio").mousemove(function(e){
           $(this, '.bio').css("background-position", newvalueX+"px     "+newvalueY+"px");
 });
 });
+*/
