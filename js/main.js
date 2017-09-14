@@ -53,7 +53,12 @@ $('.banner-title').slideDown(1300);
 
 
 
-
+$('.banner-button').mouseenter(function () {
+  $('.yt-ico').css('color', 'red');
+});
+$('.banner-button').mouseout(function () {
+  $('.yt-ico').css('color', 'white');
+});
 
 
 });

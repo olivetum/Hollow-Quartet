@@ -24,6 +24,9 @@ body {
 a {
   text-decoration: none !important;
 }
+a:hover {
+  color: white !important;
+}
 .menu-container {
   border-top: 3px solid white;
   margin: 0 auto;
@@ -46,8 +49,8 @@ a {
   height: 46px;
   margin: 2px;
   font-weight: 600;
-  opacity: 0.8;
-  color: white !important;
+  opacity: 1;
+  color: white;
 
 }
 .menu-item a {
@@ -93,10 +96,15 @@ a {
   transition: transform 0.2s;
 }
 .banner-button:hover {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
-  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
+box-shadow: 0px 0px 13px 5px rgba(255,255,255,1);
+  transform: scale(1.09);
+}
+
+.yt-ico {
+  transition: all 0.7s;
 }
 
 .youtube {
@@ -123,9 +131,9 @@ a {
   transition: box-shadow 0.3s ease-in-out;
 }
 .bio:hover {
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.48);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
 }
 .bio>p {
   position: relative;
@@ -233,7 +241,7 @@ td > a {
 
 
 .effect-shine:hover {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(255,255,255,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 1.6s infinite;
 }
